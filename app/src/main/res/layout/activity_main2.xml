@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sound"
+        android:id="@+id/txtsond"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold|italic" />
+
+    <ImageView
+        android:id="@+id/imgsond"
+        android:layout_below="@id/txtsond"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_2" />
+    <androidx.appcompat.widget.AppCompatSeekBar
+        android:id="@+id/seeksond"
+        android:layout_below="@id/imgsond"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <LinearLayout
+        android:id="@+id/lyoutbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seeksond"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true">
+        <Button
+            android:id="@+id/prvbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/baseline_skip_previous_24"
+            android:textColor="@color/white"
+            android:textStyle="bold|italic"/>
+        <Button
+            android:id="@+id/playPauseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:button="@drawable/play_pause_selector"
+            android:checked="true"/>
+        <Button
+            android:id="@+id/nxtbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/baseline_skip_next_24"
+            android:textColor="@color/white"
+            android:onClick="nxtbutton"
+            android:textStyle="bold|italic"/>
+
+    </LinearLayout>
+</RelativeLayout>
+
+
+
+
+
